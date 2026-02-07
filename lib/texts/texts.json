@@ -1,0 +1,129 @@
+{
+  "brand": {
+    "name": "The Boutique at Horton Place",
+    "tagline": "Simple Luxury, Curated for You",
+    "description": "A premium lifestyle destination where fashion meets elegance",
+    "establishedYear": "2020",
+    "founder": "Established with a vision of bringing simple luxury to Colombo"
+  },
+  "hero": {
+    "title": "Discover Simple Luxury",
+    "subtitle": "Curated fashion and lifestyle pieces that tell your story",
+    "description": "Experience the finest collection of handcrafted fashion, lifestyle essentials, and premium comfort in the heart of Colombo.",
+    "primaryCta": "Explore Collections",
+    "secondaryCta": "Visit Boutique",
+    "tertiaryCta": "Lifestyle Products",
+    "quaternaryCta": "Book Styling"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "Where Elegance Meets Authenticity",
+    "description": "Founded in 2020, The Boutique at Horton Place represents the perfect blend of simple luxury and curated global lifestyle. We believe in creating personalized experiences that celebrate individual style while maintaining the highest standards of craftsmanship and quality.",
+    "philosophy": "Our philosophy centers around simple luxury - the belief that true elegance lies in thoughtful curation, exceptional quality, and personalized service.",
+    "mission": "To provide an exclusive boutique experience that transforms fashion into personal storytelling."
+  },
+  "collections": {
+    "title": "Fashion Collections",
+    "subtitle": "Handcrafted Excellence in Every Piece",
+    "ethnicWear": {
+      "title": "Ethnic Couture",
+      "description": "Handcrafted exclusive designs celebrating cultural elegance with contemporary sophistication",
+      "features": ["Handcrafted", "Exclusive designs", "Cultural elegance"]
+    },
+    "linen": {
+      "title": "Linen Collection",
+      "description": "Premium breathable luxury combining comfort with casual sophistication for everyday elegance",
+      "features": ["Breathability", "Comfort luxury", "Casual sophistication"]
+    },
+    "everyday": {
+      "title": "Everyday Luxury",
+      "description": "Elevated essentials that bring premium quality to your daily wardrobe",
+      "features": ["Premium quality", "Versatile design", "Timeless appeal"]
+    },
+    "bottomWear": {
+      "title": "Premium Bottom Wear",
+      "description": "Sophisticated chinos, athletic pants, and smart casual wear for the modern lifestyle",
+      "features": ["Chinos", "Athletic pants", "Smart casual wear"]
+    },
+    "plusSize": {
+      "title": "Plus Size Fashion",
+      "description": "Inclusive luxury fashion designed for confidence, comfort, and style",
+      "features": ["Inclusivity", "Confidence", "Comfort-focused luxury"]
+    }
+  },
+  "lifestyle": {
+    "title": "Lifestyle & Gifts",
+    "subtitle": "Curated Living Essentials",
+    "description": "Beyond fashion, discover our carefully selected collection of lifestyle products that enhance your everyday moments.",
+    "beauty": {
+      "title": "Beauty & Wellness",
+      "description": "Premium beauty products and wellness essentials for your daily rituals"
+    },
+    "homeDecor": {
+      "title": "Home Décor",
+      "description": "Elegant pieces to transform your living spaces into sanctuaries of style"
+    },
+    "jewelry": {
+      "title": "Jewelry",
+      "description": "Carefully curated jewelry pieces that complement your personal style"
+    },
+    "stationery": {
+      "title": "Stationery",
+      "description": "Luxury stationery and desk accessories for the modern professional"
+    },
+    "seasonal": {
+      "title": "Seasonal Gifts",
+      "description": "Thoughtfully chosen gifts for every season and special occasion"
+    }
+  },
+  "experience": {
+    "title": "62 Precinct Experience",
+    "subtitle": "Your Complete Lifestyle Destination",
+    "description": "More than just a boutique – 62 Precinct is a carefully curated lifestyle hub where fashion, dining, and premium convenience converge.",
+    "peppermint": {
+      "title": "Peppermint Café",
+      "description": "Comfort dining with 24-hour availability in a pet-friendly environment",
+      "features": ["Comfort dining", "24-hour availability", "Pet-friendly"]
+    },
+    "twentyFourSeven": {
+      "title": "24seven Store",
+      "description": "Imported international goods offering convenience luxury experience",
+      "features": ["Imported goods", "International brands", "Convenience luxury"]
+    },
+    "crossVisitCta": "Explore the complete 62 Precinct lifestyle experience"
+  },
+  "visit": {
+    "title": "Visit Our Boutique",
+    "subtitle": "Experience Luxury in Person",
+    "description": "Step into our carefully designed space where every detail reflects our commitment to simple luxury and personalized service.",
+    "address": "62 Horton Place, Colombo 07, Sri Lanka",
+    "hours": {
+      "weekdays": "Monday - Friday: 10:00 AM - 8:00 PM",
+      "weekends": "Saturday - Sunday: 10:00 AM - 9:00 PM"
+    },
+    "contact": {
+      "phone": "+94 11 234 5678",
+      "email": "hello@bahp.lk"
+    },
+    "ctas": {
+      "directions": "Get Directions",
+      "visit": "Plan Your Visit"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "collections": "Collections",
+    "lifestyle": "Lifestyle & Gifts",
+    "experience": "62 Precinct Experience",
+    "events": "Events",
+    "contact": "Visit Us"
+  },
+  "footer": {
+    "copyright": "© 2024 The Boutique at Horton Place. All rights reserved.",
+    "social": {
+      "instagram": "@boutique_hortonplace",
+      "facebook": "The Boutique at Horton Place"
+    }
+  }
+}
