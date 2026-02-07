@@ -4,7 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
+import { IconMapPin, IconClock, IconPhone } from "@tabler/icons-react";
 import texts from "@/lib/texts/texts.json";
+import images from "@/lib/texts/images.json";
+import Image from "next/image";
 
 export function Contact() {
   return (
@@ -31,7 +34,7 @@ export function Contact() {
             <Card className="border-border/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3 text-xl">
-                  <span className="text-2xl">📍</span>
+                  <IconMapPin className="w-6 h-6 text-primary" />
                   <span className="text-foreground">Location</span>
                 </CardTitle>
               </CardHeader>
@@ -112,25 +115,33 @@ export function Contact() {
 
           {/* Map & Visit Highlights */}
           <div className="space-y-6">
-            {/* Map Placeholder */}
-            <Card className="border-border/20">
-              <CardContent className="p-0">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">🗺️</div>
-                    <p className="text-lg text-foreground/80 mb-4">Interactive Map</p>
-                    <Button 
-                      className="bg-primary text-primary-foreground hover:bg-accent rounded-full"
-                    >
-                      View on Google Maps
-                    </Button>
-                  </div>
+            {/* Boutique Exterior & Map */}
+            <Card className="border-border/20 overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={images.contact.boutiqueExterior}
+                  alt="62 Precinct boutique exterior with clear signage showcasing modern facade and welcoming entrance"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="text-white font-medium text-lg mb-2">Visit Our Boutique</h4>
+                  <p className="text-white/90 text-sm">Located at the heart of fashion district</p>
                 </div>
-              </CardContent>
+                <div className="absolute top-4 right-4">
+                  <Button 
+                    size="sm"
+                    className="bg-white/90 text-black hover:bg-white rounded-full backdrop-blur-sm"
+                  >
+                    View on Google Maps
+                  </Button>
+                </div>
+              </div>
             </Card>
 
             {/* Visit Highlights */}
-            <Card className="border-border/20 bg-gradient-to-br from-primary/5 to-accent/5">
+            <Card className="border-border/20 bg-linear-to-br from-primary/5 to-accent/5">
               <CardHeader>
                 <CardTitle className="text-xl text-foreground">Why Visit Our Boutique?</CardTitle>
               </CardHeader>

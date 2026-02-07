@@ -3,6 +3,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import texts from "@/lib/texts/texts.json";
+import images from "@/lib/texts/images.json";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -49,6 +51,24 @@ export function AboutSection() {
 
           {/* Brand Highlights */}
           <div className="space-y-6">
+            {/* Founder Portrait */}
+            <Card className="overflow-hidden border-border/20">
+              <div className="aspect-[4/3] relative">
+                <Image
+                  src={images.about.founderPortrait}
+                  alt="Portrait of the founder in boutique setting showcasing brand philosophy"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h4 className="text-white font-medium text-lg">Founded with Vision</h4>
+                  <p className="text-white/90 text-sm">Curating lifestyle excellence since {texts.brand.establishedYear}</p>
+                </div>
+              </div>
+            </Card>
+            
+            {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-4">
               <Card className="text-center p-6 border-border/20 hover:border-primary/40 transition-colors">
                 <CardContent className="p-0">
@@ -66,13 +86,21 @@ export function AboutSection() {
               </Card>
             </div>
             
-            <Card className="p-6 border-border/20 bg-gradient-to-br from-primary/5 to-accent/5">
-              <CardContent className="p-0">
-                <h4 className="text-lg font-medium text-foreground mb-3">Founded with Vision</h4>
-                <p className="text-foreground/80 text-sm leading-relaxed">
-                  {texts.brand.founder}
-                </p>
-              </CardContent>
+            {/* Boutique Interior */}
+            <Card className="overflow-hidden border-border/20">
+              <div className="aspect-video relative">
+                <Image
+                  src={images.about.boutiqueInterior}
+                  alt="Elegant boutique interior showcasing curated fashion collections and modern design"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+                <div className="absolute top-4 left-4 right-4">
+                  <h4 className="text-white font-medium text-lg">Our Boutique Experience</h4>
+                  <p className="text-white/90 text-sm">Where fashion meets lifestyle</p>
+                </div>
+              </div>
             </Card>
             
             <div className="space-y-3">
