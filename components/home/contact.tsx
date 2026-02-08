@@ -64,7 +64,7 @@ export function Contact() {
             <Card className="border-border/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3 text-xl">
-                  <span className="text-2xl">⏰</span>
+                  <IconClock className="w-6 h-6 text-primary" />
                   <span className="text-foreground">Opening Hours</span>
                 </CardTitle>
               </CardHeader>
@@ -89,7 +89,7 @@ export function Contact() {
             <Card className="border-border/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3 text-xl">
-                  <span className="text-2xl">📞</span>
+                  <IconPhone className="w-6 h-6 text-primary" />
                   <span className="text-foreground">Get in Touch</span>
                 </CardTitle>
               </CardHeader>

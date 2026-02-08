@@ -30,7 +30,7 @@ export function Experience() {
         {/* Experience Hub Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Peppermint Café */}
-          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden">
+          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden py-0">
             {/* Café Interior Image */}
             <div className="aspect-video relative overflow-hidden">
               <Image
@@ -76,7 +76,7 @@ export function Experience() {
           </Card>
 
           {/* 24seven Store */}
-          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden">
+          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden py-0">
             {/* Store Interior Image */}
             <div className="aspect-video relative overflow-hidden">
               <Image

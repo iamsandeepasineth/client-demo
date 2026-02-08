@@ -52,7 +52,7 @@ export function AboutSection() {
           {/* Brand Highlights */}
           <div className="space-y-6">
             {/* Founder Portrait */}
-            <Card className="overflow-hidden border-border/20">
+            <Card className="overflow-hidden border-border/20 py-0">
               <div className="aspect-[4/3] relative">
                 <Image
                   src={images.about.founderPortrait}
@@ -87,7 +87,7 @@ export function AboutSection() {
             </div>
             
             {/* Boutique Interior */}
-            <Card className="overflow-hidden border-border/20">
+            <Card className="overflow-hidden border-border/20 py-0">
               <div className="aspect-video relative">
                 <Image
                   src={images.about.boutiqueInterior}
