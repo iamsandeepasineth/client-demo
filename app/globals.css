@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -49,29 +47,27 @@
 
 :root {
   --radius: 0.625rem;
-  
+
   /* Design System Color Palette */
   /* Primary Base Color - #404040 Charcoal Grey */
   --charcoal-grey: oklch(0.3 0 0);
-  
+
   /* Primary Accent Color - #F2D338 Bright Gold Yellow */
   --bright-gold: oklch(0.85 0.15 85);
-  
+
   /* Secondary Accent - #D9A714 Deep Golden Yellow */
   --deep-gold: oklch(0.7 0.12 75);
-  
+
   /* Premium/Strong Accent - #A67D03 Dark Gold/Bronze */
   --dark-gold: oklch(0.55 0.10 70);
-  
+
   /* Light Background - #F2F2F2 Soft Light Grey */
   --soft-grey: oklch(0.95 0 0);
 
-  /* Semantic Color Mapping */
-  --background: var(--soft-grey);
-  --foreground: var(--charcoal-grey);
+  /* Semantic Color Mapping - Using Brand Colors */
   --card: var(--soft-grey);
   --card-foreground: var(--charcoal-grey);
-  --popover: var(--soft-grey);
+  --popover: white;
   --popover-foreground: var(--charcoal-grey);
   --primary: var(--bright-gold);
   --primary-foreground: var(--charcoal-grey);
@@ -79,29 +75,31 @@
   --secondary-foreground: var(--charcoal-grey);
   --muted: var(--soft-grey);
   --muted-foreground: oklch(0.45 0 0);
-  --accent: var(--bright-gold);
+  --accent: var(--deep-gold);
   --accent-foreground: var(--charcoal-grey);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: var(--deep-gold);
-  --input: var(--soft-grey);
+  --border: oklch(0.85 0 0);
+  --input: oklch(0.9 0 0);
   --ring: var(--bright-gold);
   --chart-1: var(--bright-gold);
   --chart-2: var(--deep-gold);
   --chart-3: var(--dark-gold);
   --chart-4: var(--charcoal-grey);
-  --chart-5: oklch(0.75 0.08 80);
-  --sidebar: var(--charcoal-grey);
-  --sidebar-foreground: var(--soft-grey);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: var(--soft-grey);
+  --sidebar-foreground: var(--charcoal-grey);
   --sidebar-primary: var(--bright-gold);
   --sidebar-primary-foreground: var(--charcoal-grey);
   --sidebar-accent: var(--deep-gold);
   --sidebar-accent-foreground: var(--charcoal-grey);
-  --sidebar-border: var(--deep-gold);
+  --sidebar-border: oklch(0.85 0 0);
   --sidebar-ring: var(--bright-gold);
+  --background: white;
+  --foreground: var(--charcoal-grey);
 }
 
 .dark {
-  /* Dark Mode Color Overrides */
+  /* Dark Mode Color Overrides - Using Brand Colors */
   --background: var(--charcoal-grey);
   --foreground: var(--soft-grey);
   --card: oklch(0.25 0 0);
@@ -114,7 +112,7 @@
   --secondary-foreground: var(--charcoal-grey);
   --muted: oklch(0.25 0 0);
   --muted-foreground: oklch(0.7 0 0);
-  --accent: var(--bright-gold);
+  --accent: var(--deep-gold);
   --accent-foreground: var(--charcoal-grey);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(0.4 0 0);
@@ -123,9 +121,9 @@
   --chart-1: var(--bright-gold);
   --chart-2: var(--deep-gold);
   --chart-3: var(--dark-gold);
-  --chart-4: var(--soft-grey);
-  --chart-5: oklch(0.75 0.08 80);
-  --sidebar: oklch(0.2 0 0);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.25 0 0);
   --sidebar-foreground: var(--soft-grey);
   --sidebar-primary: var(--bright-gold);
   --sidebar-primary-foreground: var(--charcoal-grey);

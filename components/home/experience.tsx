@@ -4,7 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { IconCoffee, IconShoppingBag } from "@tabler/icons-react";
 import texts from "@/lib/texts/texts.json";
+import images from "@/lib/texts/images.json";
+import Image from "next/image";
 
 export function Experience() {
   return (
@@ -27,16 +30,27 @@ export function Experience() {
         {/* Experience Hub Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Peppermint Café */}
-          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden">
-            <div className="bg-gradient-to-br from-primary/15 to-accent/15 p-6">
-              <div className="flex items-center justify-between mb-4">
-                <CardTitle className="text-2xl font-light text-foreground group-hover:text-primary transition-colors">
-                  {texts.experience.peppermint.title}
-                </CardTitle>
-                <div className="text-3xl">🍽️</div>
+          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden py-0">
+            {/* Café Interior Image */}
+            <div className="aspect-video relative overflow-hidden">
+              <Image
+                src={images.experience.peppermintCafe.interior}
+                alt="Peppermint Café interior showcasing comfortable dining space with modern design and warm ambiance"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm p-2 rounded-full">
+                <IconCoffee className="w-6 h-6 text-primary" />
               </div>
-              <Separator className="bg-border/30 mb-4" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <h3 className="text-2xl font-light text-white group-hover:text-white transition-colors mb-2">
+                  {texts.experience.peppermint.title}
+                </h3>
+                <p className="text-white/90 text-sm">Comfort dining & specialty coffee</p>
+              </div>
             </div>
+            
             <CardContent className="p-6">
               <p className="text-foreground/80 leading-relaxed mb-6">
                 {texts.experience.peppermint.description}
@@ -62,16 +76,27 @@ export function Experience() {
           </Card>
 
           {/* 24seven Store */}
-          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden">
-            <div className="bg-gradient-to-br from-accent/15 to-primary/15 p-6">
-              <div className="flex items-center justify-between mb-4">
-                <CardTitle className="text-2xl font-light text-foreground group-hover:text-primary transition-colors">
-                  {texts.experience.twentyFourSeven.title}
-                </CardTitle>
-                <div className="text-3xl">🏪</div>
+          <Card className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden py-0">
+            {/* Store Interior Image */}
+            <div className="aspect-video relative overflow-hidden">
+              <Image
+                src={images.experience.twentyFourSevenStore.interior}
+                alt="24seven Store interior featuring curated international products and modern retail design"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm p-2 rounded-full">
+                <IconShoppingBag className="w-6 h-6 text-primary" />
               </div>
-              <Separator className="bg-border/30 mb-4" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <h3 className="text-2xl font-light text-white group-hover:text-white transition-colors mb-2">
+                  {texts.experience.twentyFourSeven.title}
+                </h3>
+                <p className="text-white/90 text-sm">International goods & lifestyle</p>
+              </div>
             </div>
+            
             <CardContent className="p-6">
               <p className="text-foreground/80 leading-relaxed mb-6">
                 {texts.experience.twentyFourSeven.description}
