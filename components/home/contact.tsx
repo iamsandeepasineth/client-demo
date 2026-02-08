@@ -116,7 +116,7 @@ export function Contact() {
           {/* Map & Visit Highlights */}
           <div className="space-y-6">
             {/* Boutique Exterior & Map */}
-            <Card className="border-border/20 overflow-hidden">
+            <Card className="border-border/20 overflow-hidden py-0">
               <div className="aspect-video relative">
                 <Image
                   src={images.contact.boutiqueExterior}
