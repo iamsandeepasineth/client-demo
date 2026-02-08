@@ -10,8 +10,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-light tracking-tight mb-4">{texts.brand.name}</h3>
-            <p className="text-background/80 mb-4 max-w-md">
+            <h3 className="text-2xl font-light tracking-tight mb-4 text-primary">{texts.brand.name}</h3>
+            <p className="text-background/85 mb-4 max-w-md">
               {texts.brand.description}
             </p>
             <p className="text-background/70 text-sm">
@@ -21,20 +21,20 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-medium mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-background/80">
-              <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
-              <li><a href="#collections" className="hover:text-primary transition-colors">Collections</a></li>
-              <li><a href="#lifestyle" className="hover:text-primary transition-colors">Lifestyle</a></li>
-              <li><a href="#experience" className="hover:text-primary transition-colors">62 Precinct</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Visit Us</a></li>
+            <h4 className="text-lg font-medium mb-4 text-background">Quick Links</h4>
+            <ul className="space-y-2 text-background/75">
+              <li><a href="about" className="hover:text-primary transition-colors">About</a></li>
+              <li><a href="collections" className="hover:text-primary transition-colors">Collections</a></li>
+              <li><a href="lifestyle" className="hover:text-primary transition-colors">Lifestyle</a></li>
+              <li><a href="experience" className="hover:text-primary transition-colors">62 Precinct</a></li>
+              <li><a href="contact" className="hover:text-primary transition-colors">Visit Us</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-medium mb-4">Contact</h4>
-            <div className="space-y-3 text-background/80">
+            <h4 className="text-lg font-medium mb-4 text-background">Contact</h4>
+            <div className="space-y-3 text-background/75">
               <div className="flex items-center gap-2">
                 <IconMapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm">{texts.visit.address}</span>

@@ -61,7 +61,7 @@ export function FashionAndCollection() {
           {collections.map((collection, index) => (
             <Card 
               key={collection.key} 
-              className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden"
+              className="group border-border/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg overflow-hidden py-0"
             >
               {/* Collection Hero Image */}
               <div className="aspect-[4/3] relative overflow-hidden">
